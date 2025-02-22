@@ -48,7 +48,7 @@ def _validate_temperature_range():
     with open(f"{DAG_FOLDER}/data.json", "r") as f:
         data = json.load(f)
 
-    assert data.get("main").get("temp") >= 30 
+    assert data-get("main").get("temp") >= 30 
     assert data.get("main").get("temp") <= 45
 
 def _create_weather_table():
@@ -142,4 +142,3 @@ with DAG(
     start >> get_weather_data >> [validate_data , validate_temperature_range] >> load_data_to_postgres >> send_email
     start >> create_weather_table >> load_data_to_postgres
     send_email >> end
-    

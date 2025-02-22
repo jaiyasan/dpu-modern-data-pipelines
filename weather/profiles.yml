@@ -2,16 +2,16 @@ weather:
   outputs:
     dev:
       dbname: postgres
-      host: \localhost
+      host: localhost
       pass: postgres
       port: 5432
       schema: dbt_thikamporn
       threads: 1
       type: postgres
-      user: postgre
+      user: postgres
     production:
       dbname: postgres
-      host: \localhost
+      host: localhost
       pass: postgres
       port: 5432
       schema: production

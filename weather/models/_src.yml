@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  -name: dpu
-  database: postgres
-  schema: public
-  tables:
-    -name: weathers
+  - name: dpu
+    database: postgres
+    schema: public
+    tables:
+      - name: weathers
